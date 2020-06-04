@@ -1,0 +1,27 @@
+<!--  -->
+<div class="container container-sm container-md container-lg container-xl container-fluid mt-5" *ngIf="!isLoading">
+    <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <p class="text-center font-weight-bolder shadow">PieChart : Total deaths for each country.</p>
+            <canvas id="pieChart" width="400" height="400" class="shadow"></canvas>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p class="text-center font-weight-bolder shadow">BarChart : Total & New confirmed, deaths and recovered.</p>
+            <canvas id="barChart" width="400" height="400" class="shadow"></canvas>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p class="text-center font-weight-bolder shadow">DoughnutChart : Total recovered, confirmed and deaths.</p>
+            <canvas id="doughnutChart" width="400" height="400" class="shadow"></canvas>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p class="text-center font-weight-bolder shadow">LineChart : Confirmed cases in morocco.</p>
+            <canvas id="lineChart" width="400" height="400" class="shadow"></canvas>
+        </div>
+    </div>
+</div>
+<!--  -->
+
+<!--  -->
+<ngx-loading [show]="isLoading" [config]="{ fullScreenBackdrop: true }"></ngx-loading>
